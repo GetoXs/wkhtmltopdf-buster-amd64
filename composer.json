@@ -1,24 +1,20 @@
 {
-    "name": "h4cc/wkhtmltopdf-amd64",
-    "description": "Convert html to pdf using webkit (qtwebkit). Static linked linux binary for amd64 systems.",
+    "name": "getoxs/wkhtmltopdf-buster-amd64",
+    "description": "Convert html to pdf using webkit (qtwebkit). Static linked linux binary for Debian buster amd64 systems.",
     "keywords": ["pdf", "thumbnail", "snapshot", "wkhtmltopdf", "convert", "binary"],
     "license": "LGPL Version 3",
     "homepage": "http://wkhtmltopdf.org/",
     "authors": [
         {
-            "name": "Julius Beckmann",
-            "email": "github@h4cc.de"
+            "name": "Mateusz"
         }
     ],
     "minimum-stability": "stable",
     "bin": [
-        "bin/wkhtmltopdf-amd64"
+        "bin/wkhtmltopdf-buster-amd64"
     ],
     "require": {
     },
     "autoload": {
-        "psr-4": {
-            "h4cc\\WKHTMLToPDF\\": ""
-        }
     }
 }
