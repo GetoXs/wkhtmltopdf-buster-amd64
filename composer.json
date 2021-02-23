@@ -2,11 +2,11 @@
     "name": "getoxs/wkhtmltopdf-buster-amd64",
     "description": "Convert html to pdf using webkit (qtwebkit). Static linked linux binary for Debian buster amd64 systems.",
     "keywords": ["pdf", "thumbnail", "snapshot", "wkhtmltopdf", "convert", "binary"],
-    "license": "LGPL Version 3",
+    "license": "MIT",
     "homepage": "http://wkhtmltopdf.org/",
     "authors": [
         {
-            "name": "Mateusz"
+            "name": "Mateusz Przybyłek"
         }
     ],
     "minimum-stability": "stable",

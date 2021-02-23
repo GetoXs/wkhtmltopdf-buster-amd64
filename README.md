@@ -1,5 +1,5 @@
-wkhtmltopdf
-================
+wkhtmltopdf-buster-amd64
+========================
 
 This repository contains the static compiled binaries from the [wkhtmltopdf project](http://wkhtmltopdf.org/).
 More about the functionality of wkhtmltopdf and wkthmltoimage can be found there.
@@ -18,32 +18,17 @@ To install the latest version, use '0.12.4'.
 
 This package can be found on [Packagist](http://packagist.org) and installed with [Composer](https://getcomposer.org/).
 
-Require the package for _i386_ with:
-
-    php composer.phar require h4cc/wkhtmltopdf-i386 "0.12.4"
-
-And for _amd64_ with:
-
-    php composer.phar require h4cc/wkhtmltopdf-amd64 "0.12.4"
-
+php composer.phar getoxs/wkhtmltopdf-buster-amd64
 The binary will then be located at:
 
-    vendor/h4cc/wkhtmltopdf-i386/bin/wkhtmltopdf-i386
-
-Also a symlink will be created in your configured bin/ folder, for example:
-
-    vendor/bin/wkhtmltopdf-i386
-
+vendor/bin/wkhtmltopdf-buster-amd64
 ### Usage
 
-You can use the path constant to easily locate the binary in the PHP codebase: 
+You can easily use it with [laravel-snappy](https://github.com/barryvdh/laravel-snappy) package by configure `config\snappy.php`
 
-``` php
-$path = \h4cc\WKHTMLToPDF\WKHTMLToPDF::PATH;
-```
-
-For realpath use following script
-
-``` php
-$realpath = realpath(\h4cc\WKHTMLToPDF\WKHTMLToPDF::PATH);
+```php
+    'pdf' => [
+        'enabled' => true,
+        'binary'  => env('WKHTML_PDF_BINARY', '../vendor/bin/wkhtmltopdf-amd64'),
+    ...
 ```
