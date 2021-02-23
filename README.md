@@ -14,7 +14,7 @@ The version of the binary is equal to the git tag.
 This package can be found on [Packagist](https://packagist.org/packages/getoxs/wkhtmltopdf-buster-amd64) and installed with [Composer](https://getcomposer.org/).
 
 ```
-php composer.phar getoxs/wkhtmltopdf-buster-amd64
+php composer.phar require getoxs/wkhtmltopdf-buster-amd64
 ```
 
 The binary will then be located at: `vendor/bin/wkhtmltopdf-buster-amd64`
@@ -25,6 +25,6 @@ You can easily use it with [laravel-snappy](https://github.com/barryvdh/laravel-
 ```php
     'pdf' => [
         'enabled' => true,
-        'binary'  => env('WKHTML_PDF_BINARY', '../vendor/bin/wkhtmltopdf-amd64'),
+        'binary'  => env('WKHTML_PDF_BINARY', '../vendor/bin/wkhtmltopdf-buster-amd64'),
     ...
 ```
