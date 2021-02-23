@@ -16,5 +16,8 @@
     "require": {
     },
     "autoload": {
+    },
+    "replace": {
+        "h4cc/wkhtmltopdf-amd64": "0.12.4"
     }
 }
